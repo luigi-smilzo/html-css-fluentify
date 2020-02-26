@@ -1,0 +1,228 @@
+/* General rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: gray;
+}
+
+/* Typography */
+h2 {
+  color: #222;
+  margin-bottom: 14px;
+  font-size: 180%;
+  font-weight: 700;
+}
+
+h2.big {
+  font-size: 220%;
+}
+
+/* Utilities */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid white;
+  line-height: 23px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.col-3 {
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 2%;
+}
+
+/* ^^^aggiungo anche menu-inline per aumentare la specificità^^^ */
+
+.btn.green {
+  padding: 5px 10px;
+  border: 0;
+  background-color: #7bbb00;
+}
+
+.btn.blue {
+  padding: 5px 30px;
+}
+
+.btn.large {
+  padding: 24px;
+}
+
+.float-left {
+  float: left;
+}
+
+/* Header */
+#main-header {
+  height: 560px;
+  background-color: #0b3259;
+  background-image: url('../img/background-header.png');
+  background-position: 105% 105%;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+}
+
+.header-nav {
+  height: 80px;
+  font-size: 80%;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-nav a:hover,
+.header-nav a:active,
+.header-nav a:focus {
+  text-decoration: none;
+  color: mediumseagreen;
+}
+
+.header-nav .header-logo,
+.header-nav .header-nav-center,
+.header-nav .header-nav-right {
+  float: left;
+}
+
+.header-nav .header-logo {
+  width: 15%;
+}
+
+.header-nav .header-logo img {
+  margin-top: 12px;
+}
+
+.header-nav .header-nav-center {
+  width: 45%;
+}
+
+.header-nav .header-nav-right {
+  width: 40%;
+  text-align: right;
+}
+
+/* Menu */
+.menu-inline {
+  list-style: none;
+}
+
+.menu-inline li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  position: relative;
+  height: 480px;
+}
+
+.jumbotron-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.jumbotron-text h1 {
+  font-size: 350%;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Efficiency */
+#efficiency {
+  padding: 40px 8%;
+  background-color: #d3d3d3;
+  text-align: center;
+}
+
+#efficiency p {
+  font-size: 130%;
+}
+
+/* Info */
+#info {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 1px solid lightgrey;
+  margin: 0 1%;
+}
+
+.info-data-img {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.info-data-heading {
+  position: relative;
+  color: #7bbb00;
+  font-size: 180%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.info-data-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20%;
+  transform: translateX(-50%);
+  height: 1px;
+  background: #d3d3d3;
+}
+
+.info-data-text {
+  font-size: 120%;
+  line-height: 1.7;
+}
+
+/* Plan */
+#plan {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* Help */
+#help {
+  position: fixed;
+  bottom: 0;
+  right: 15%;
+}
+
+#help a {
+  display: inline-block;
+  padding: 10px;
+  background-color:  #7bbb00;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
+}
